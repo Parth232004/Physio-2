@@ -22,7 +22,7 @@ Note: MediaPipe is required for real pose detection, but the demo uses simulated
 
 ## Usage
 
-Run the demo:
+Run the console demo:
 
 ```bash
 python demo.py
@@ -30,13 +30,22 @@ python demo.py
 
 Select an exercise and observe the simulated session with logging.
 
+For real-time webcam testing:
+
+```bash
+python webcam_demo.py
+```
+
+Select an exercise and perform it in front of the camera for live validation and feedback.
+
 ## Files
 
 - `physio_exercises.py`: Core exercise and angle calculation logic.
 - `exercise_router.py`: Exercise selection and validation.
 - `realtime_feedback.py`: Feedback generation.
 - `session_scoring.py`: Session scoring.
-- `demo.py`: Console demo.
+- `demo.py`: Console demo with simulation.
+- `webcam_demo.py`: Real-time webcam demo.
 - `.gitignore`: Ignores cache files.
 - `README.md`: This file.
 
